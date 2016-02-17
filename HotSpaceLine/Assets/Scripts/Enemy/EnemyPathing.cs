@@ -14,5 +14,11 @@ public class EnemyPathing : MonoBehaviour {
 
     void Update()
     {
+
         agent.SetDestination(plyr.transform.position);
     }}
+
+
+/*
+    
+*/
