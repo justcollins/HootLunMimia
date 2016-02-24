@@ -11,51 +11,62 @@ When setting up, please make sure to lock the X and Z rotation constraints on th
 [RequireComponent (typeof(Rigidbody))]
 public class PlayerMovement : MonoBehaviour {
 
-    public float playerSpeed = 10;
+    public float playerSpeed = 10.0f;
+    public int sprintSpeedMultiplier = 2;
 
     private new Rigidbody rigidbody;
-    private new GameObject camera;
     private Vector3 movement;
     private int groundMask;
     private float camRayLength;
+    private bool isSprinting = false;
 
 	void Awake () {
         rigidbody = GetComponent<Rigidbody>();
-        camera = GameObject.FindGameObjectWithTag("MainCamera");
         groundMask = LayerMask.GetMask("Ground");
 	}
 
     void Start() {
-        camRayLength = camera.transform.position.y + 1;
+        camRayLength = 1000000;//camera.transform.position.y + camera.transform.position.x + camera.transform.position.z + 1;
     }
 	
 	void FixedUpdate () {
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
+        if(Input.GetKey(KeyCode.LeftShift)) {
+            isSprinting = true;
+        } else {
+            isSprinting = false;
+        }
+
         MovementManger(h, v);
         turning();
     }
 
-    void MovementManger(float horizontalMove, float verticalMove) {
+    private void MovementManger(float horizontalMove, float verticalMove) {
         movement.Set(horizontalMove, 0.0f, verticalMove);
-        movement = movement.normalized * playerSpeed * Time.deltaTime;
+        if(!isSprinting) {
+            movement = movement.normalized * playerSpeed * Time.deltaTime;
+        } else {
+            movement = movement.normalized * Sprint(playerSpeed) * Time.deltaTime;
+        }
         rigidbody.MovePosition(this.transform.position + movement);
     }
 
-    void turning() {
+    private void turning() {
         Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit floorHit;
 
         if (Physics.Raycast(camRay, out floorHit, camRayLength, groundMask))
         {
             Vector3 playerToMouse = floorHit.point - transform.position;
-
             playerToMouse.y = 0f;
-
             Quaternion newRotation = Quaternion.LookRotation(playerToMouse);
-
             rigidbody.MoveRotation(newRotation);
         }
+    }
+
+    private float Sprint(float currentSpeed) {
+        return currentSpeed * sprintSpeedMultiplier;
     }
 }
