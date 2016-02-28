@@ -12,6 +12,8 @@ When setting up, please make sure to lock the X and Z rotation constraints on th
 public class PlayerMovement : MonoBehaviour {
 
     public float playerSpeed = 10.0f;
+    public float turnSensitivityX = 15.0f;
+    public float turnSensitivityZ = 15.0f;
     public int sprintSpeedMultiplier = 2;
 
     private new Rigidbody rigidbody;
@@ -57,8 +59,7 @@ public class PlayerMovement : MonoBehaviour {
         Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit floorHit;
 
-        if (Physics.Raycast(camRay, out floorHit, camRayLength, groundMask))
-        {
+        if (Physics.Raycast(camRay, out floorHit, camRayLength, groundMask)){
             Vector3 playerToMouse = floorHit.point - transform.position;
             playerToMouse.y = 0f;
             Quaternion newRotation = Quaternion.LookRotation(playerToMouse);
