@@ -4,10 +4,12 @@ using System.Collections;
 public class RoomDetection : MonoBehaviour {
 
     public EnemyPathing enemy;
-
+    public GameObject plyr;
+    
 	// Use this for initialization
 	void Start () {
         enemy = GetComponentInParent<EnemyPathing>();
+        plyr = GameObject.FindGameObjectWithTag("Player");
         Debug.Log(enemy);
 	}
 	
@@ -18,7 +20,6 @@ public class RoomDetection : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("OTHERDETECTEDROOMDETECT");
         enemy.MyOnTriggerEnter(other);
     }
 }
