@@ -45,7 +45,7 @@ public class EnemyPathing : MonoBehaviour {
         }
     }
 
-    void OnTriggerEnter(Collider other)
+    public void MyOnTriggerEnter(Collider other)
     {
        
         if (other.gameObject.tag == "Room")

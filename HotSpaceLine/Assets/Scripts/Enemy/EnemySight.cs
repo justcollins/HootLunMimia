@@ -39,7 +39,7 @@ public class EnemySight : MonoBehaviour
         // If the player has entered the trigger sphere...
         if (other.gameObject == player)
         {
-            Debug.Log("TRIGGERED BY PLAYER");
+            //Debug.Log("TRIGGERED BY PLAYER");
             // By default the player is not in sight.
             playerInSight = false;
 
@@ -51,11 +51,11 @@ public class EnemySight : MonoBehaviour
             // If the angle between forward and where the player is, is less than half the angle of view...
             if (angle < fieldOfViewAngle * 0.5f)
             {
-                Debug.Log("GOOD ANGLE");
+                //Debug.Log("GOOD ANGLE");
                 RaycastHit hit;
                 
                 //transform.position = new Vector3(transform.position.x, 1, transform.position.z);//Fix for dumb
-                Debug.Log("POSITION:" + transform.position);
+                //Debug.Log("POSITION:" + transform.position);
                 //Debug.Log("PLYAR POS: " + player.transform.position);
                 //Debug.Log("DIRECTION:" + direction);
                 // ... and if a raycast towards the player hits something...
@@ -65,7 +65,7 @@ public class EnemySight : MonoBehaviour
                     // ... and if the raycast hits the player...
                     if (hit.collider.gameObject == player)
                     {
-                        Debug.Log("BIG WIN");
+                        //Debug.Log("BIG WIN");
                         // ... the player is in sight.
                         playerInSight = true;
                         // Set the last global sighting is the players current position.
