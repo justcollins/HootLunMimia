@@ -8,7 +8,7 @@ public class RoomDetection : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         enemy = GetComponentInParent<EnemyPathing>();
-        Debug.Log(enemy);
+        //Debug.Log(enemy);
 	}
 	
 	// Update is called once per frame
@@ -18,7 +18,7 @@ public class RoomDetection : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("OTHERDETECTEDROOMDETECT");
+        //Debug.Log("OTHERDETECTEDROOMDETECT");
         enemy.MyOnTriggerEnter(other);
     }
 }

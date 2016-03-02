@@ -10,28 +10,31 @@ public class Weapon : MonoBehaviour
 	public float rpm;
 	public int totalAmmo = 40;
 	public int ammoPerMag = 10;
+    public float bulletVelocity = 10;
 	public Transform spawn;
 	public Transform shellEjectionPoint;
-	public Rigidbody shell;
+	public GameObject shell;
 	private LineRenderer tracer;
 	private float secondsBetweenShots;
 	private float nextPossibleShootTime;
-	private int currentAmmoInMag;
+	public int currentAmmoInMag;
 	private bool reloading;
+    public int accVariance;
 	
 	void Start() {
-		secondsBetweenShots = 60/rpm;
-		if (GetComponent<LineRenderer>()) {
-			tracer = GetComponent<LineRenderer>();
-		}
+        //secondsBetweenShots = 60/rpm;
+        //if (GetComponent<LineRenderer>()) {
+        //    tracer = GetComponent<LineRenderer>();
+        //}
 		
-		currentAmmoInMag = ammoPerMag;
+        currentAmmoInMag = ammoPerMag;
 
 	}
 	
 	public void Shoot() {
 		
 		if (CanShoot()) {
+            Debug.Log("We can shoot.");
 			Ray ray = new Ray(spawn.position,spawn.forward);
 			RaycastHit hit;
 			
@@ -51,7 +54,9 @@ public class Weapon : MonoBehaviour
 			}
 			
 			Rigidbody newShell = Instantiate(shell,shellEjectionPoint.position,Quaternion.identity) as Rigidbody;
-			newShell.AddForce(shellEjectionPoint.forward * Random.Range(150f,200f) + spawn.forward * Random.Range(-10f,10f));
+            //Rigidbody shellRigid = newShell.GetComponent<Rigidbody>();
+            Vector3 accVector = new Vector3(Random.Range(-accVariance, accVariance), 0, Random.Range(-accVariance, accVariance)); 
+			newShell.AddForce((shellEjectionPoint.forward * bulletVelocity) + accVector);
 		}
 		
 	}
@@ -66,14 +71,17 @@ public class Weapon : MonoBehaviour
 		bool canShoot = true;
 		
 		if (Time.time < nextPossibleShootTime) {
+            Debug.Log("It is  not time to shot.");
 			canShoot = false;
 		}
 		
 		if (currentAmmoInMag == 0) {
+            Debug.Log("No ammo.");
 			canShoot = false;
 		}
 		
 		if (reloading) {
+            Debug.Log("Reloadin like a champ.");
 			canShoot = false;
 		}
 		
