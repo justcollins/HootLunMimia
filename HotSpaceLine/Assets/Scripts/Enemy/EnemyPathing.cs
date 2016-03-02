@@ -50,7 +50,7 @@ public class EnemyPathing : MonoBehaviour {
        
         if (other.gameObject.tag == "Room")
         {
-            Debug.Log("CLEAR IT OUT BOIS");
+            //Debug.Log("CLEAR IT OUT BOIS");
             patrolLocs.Clear();
             iterMAX = 0;
             if (patrolLocs.Count == 0)
