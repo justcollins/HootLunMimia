@@ -1,14 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[System.Serializable]
-public class Key {
+public class Key : MonoBehaviour{
 
-    public string name;
+    private KeyManager keyManager;
 
-    private bool hasKey;
+    private void Start() {
+        keyManager = GameObject.FindObjectOfType<KeyManager>();
+    }
 
-    public void setKey(bool keySet) {
-        hasKey = keySet;
+    private void OnTriggerEnter(Collider player) {
+        if (player.gameObject.tag == "Player") {
+            keyManager.KeyPickedUp(gameObject.name);
+        }
     }
 }

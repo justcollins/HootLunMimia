@@ -3,13 +3,15 @@ using System.Collections;
 
 public class DoorUnlock : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public GameObject matchingKey;
+    private KeyManager keyManager;
+
+    private void Start() {
+        keyManager = GameObject.FindObjectOfType<KeyManager>();
+    }
+
+    private void OnTriggerEnter() {
+
+    }
+
 }
