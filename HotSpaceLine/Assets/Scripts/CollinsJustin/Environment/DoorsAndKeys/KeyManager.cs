@@ -16,12 +16,6 @@ public class KeyManager : MonoBehaviour {
             hasKey[i] = false;
             Debug.Log("key #" + i + " is " + hasKey[i]);
         }
-        /*Debug.Log("time to set a value to true");
-        hasKey[0] = true;
-        hasKey[2] = true;
-        for (int i = 0; i < keyNames.Length; i++) {
-            Debug.Log("key #" + i + " is " + hasKey[i]);
-        } */
     }
 
     public void KeyPickedUp(string name) {

@@ -70,7 +70,7 @@ public class WeaponController : MonoBehaviour
 		currentGun = Instantiate(guns[i],hand.position,hand.rotation) as Weapon;
 		currentGun.transform.parent = hand;
 	}
-    void setWeps(bool newWep, string wepName)
+    public void setWeps(bool newWep, string wepName)
     {
         for (int i = 0; i < guns.Length; i++)
         {
