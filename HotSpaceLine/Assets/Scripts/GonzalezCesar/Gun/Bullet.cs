@@ -39,8 +39,8 @@ public class Bullet : MonoBehaviour {
 		}
 	}
 	
-	void OnTriggerEnter(Collider c) {
-		if (c.tag == "Ground") {
+	void OnTriggerEnter(Collider col) {
+		if (col.tag == "Ground") {
 			GetComponent<Rigidbody>().Sleep();
 		}
 	}

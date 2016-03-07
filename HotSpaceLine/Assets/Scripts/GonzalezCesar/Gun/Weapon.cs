@@ -34,7 +34,7 @@ public class Weapon : MonoBehaviour
 	public void Shoot() {
 		
 		if (CanShoot()) {
-            Debug.Log("We can shoot.");
+            //Debug.Log("We can shoot.");
 			Ray ray = new Ray(spawn.position,spawn.forward);
 			RaycastHit hit;
 			
