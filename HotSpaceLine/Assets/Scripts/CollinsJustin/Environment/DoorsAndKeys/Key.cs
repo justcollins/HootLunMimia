@@ -13,5 +13,6 @@ public class Key : MonoBehaviour{
         if (player.gameObject.tag == "Player") {
             keyManager.KeyPickedUp(gameObject.name);
         }
+        Destroy(this.gameObject);
     }
 }

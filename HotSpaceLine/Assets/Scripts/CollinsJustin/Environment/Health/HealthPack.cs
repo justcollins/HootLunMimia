@@ -15,6 +15,7 @@ public class HealthPack : MonoBehaviour {
         if (player.gameObject.tag == "Player") {
             AddHealth();
         }
+        Destroy(this.gameObject);
     }
 
     private void AddHealth() {
