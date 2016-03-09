@@ -33,7 +33,7 @@ public class WeaponController : MonoBehaviour
 				currentGun.ShootContinuous();
 			}
 
-			if (Input.GetButtonDown("Reload")) 
+			if (Input.GetButtonDown("Reload") || currentGun.currentAmmoInMag == 0) 
 			{
 				if (currentGun.Reload()) 
 				{
