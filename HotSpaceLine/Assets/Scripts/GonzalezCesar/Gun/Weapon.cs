@@ -11,6 +11,7 @@ public class Weapon : MonoBehaviour
 	public int totalAmmo = 40;
 	public int ammoPerMag = 10;
     public float bulletVelocity = 10;
+    public int dmgPerShot = 10;
 	public Transform spawn;
 	public Transform shellEjectionPoint;
 	public GameObject shell;
@@ -20,9 +21,10 @@ public class Weapon : MonoBehaviour
 	public int currentAmmoInMag;
 	private bool reloading;
     public int accVariance;
+    public int shotsPerFire;
 	
 	void Start() {
-        //secondsBetweenShots = 60/rpm;
+        secondsBetweenShots = 60/rpm;
         //if (GetComponent<LineRenderer>()) {
         //    tracer = GetComponent<LineRenderer>();
         //}
@@ -34,29 +36,45 @@ public class Weapon : MonoBehaviour
 	public void Shoot() {
 		
 		if (CanShoot()) {
-            Debug.Log("We can shoot.");
-			Ray ray = new Ray(spawn.position,spawn.forward);
-			RaycastHit hit;
-			
-			float shotDistance = 20;
-			
-			if (Physics.Raycast(ray,out hit, shotDistance)) {
-				shotDistance = hit.distance;
-			}
-			
-			nextPossibleShootTime = Time.time + secondsBetweenShots;
-			currentAmmoInMag --;
-			
-			GetComponent<AudioSource>().Play();
-			
-			if (tracer) {
-				StartCoroutine("RenderTracer", ray.direction * shotDistance);
-			}
-			
-			Rigidbody newShell = Instantiate(shell,shellEjectionPoint.position,Quaternion.identity) as Rigidbody;
-            //Rigidbody shellRigid = newShell.GetComponent<Rigidbody>();
-            Vector3 accVector = new Vector3(Random.Range(-accVariance, accVariance), 0, Random.Range(-accVariance, accVariance)); 
-			newShell.AddForce((shellEjectionPoint.forward * bulletVelocity) + accVector);
+            nextPossibleShootTime = Time.time + secondsBetweenShots;
+            currentAmmoInMag--;
+            GetComponent<AudioSource>().Play();
+            for (int i = 0; i < shotsPerFire; i++)
+            {
+                Ray ray = new Ray(spawn.position, spawn.forward);
+                RaycastHit hit;
+
+                float shotDistance = 20;
+
+                if (Physics.Raycast(ray, out hit, shotDistance))
+                {
+                    shotDistance = hit.distance;
+
+                    if (hit.collider.tag == "Player")
+                    {
+                        hit.collider.GetComponent<PlayerHealth>().subCurrentHealth(dmgPerShot);
+                    }
+                    if (hit.collider.tag == "Enemy")
+                    {
+                        hit.collider.GetComponent<EnemyHealth>().subCurrentHealth(dmgPerShot);
+                    }
+                }
+
+
+
+                if (Physics.Raycast(ray, out hit, shotDistance))
+                {
+                    shotDistance = hit.distance;
+                } 
+                if (tracer)
+                {
+                    StartCoroutine("RenderTracer", ray.direction * shotDistance);
+                }
+
+                Rigidbody newShell = Instantiate(shell, shellEjectionPoint.position, Quaternion.identity) as Rigidbody;
+                Vector3 accVector = new Vector3(Random.Range(-accVariance, accVariance), 0, Random.Range(-accVariance, accVariance));
+                newShell.AddForce((shellEjectionPoint.forward * bulletVelocity) + accVector);
+            }
 		}
 		
 	}
@@ -69,19 +87,16 @@ public class Weapon : MonoBehaviour
 	
 	private bool CanShoot() {
 		bool canShoot = true;
-		
+
 		if (Time.time < nextPossibleShootTime) {
-            Debug.Log("It is  not time to shot.");
 			canShoot = false;
 		}
 		
 		if (currentAmmoInMag == 0) {
-            Debug.Log("No ammo.");
 			canShoot = false;
 		}
 		
 		if (reloading) {
-            Debug.Log("Reloadin like a champ.");
 			canShoot = false;
 		}
 		
