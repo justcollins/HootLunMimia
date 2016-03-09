@@ -12,7 +12,7 @@ public class Health : MonoBehaviour {
         currentHealth += addHealth;
     }
 
-    public virtual void subCurrentHealth(int subHealth) {
+    public void subCurrentHealth(int subHealth) {
         currentHealth -= subHealth;
     }
 
@@ -21,16 +21,4 @@ public class Health : MonoBehaviour {
             isAlive = false;
         }
     }
-
-//	public virtual void TakeDamage(float dmg) {
-//		health -= dmg;
-//		
-//		if (health <= 0) {
-//			Die();
-//		}
-//	}
-//	
-//	public virtual void Die() {
-//		Destroy(gameObject);
-//	}
 }
