@@ -10,8 +10,10 @@ public class DoorUnlock : MonoBehaviour {
         keyManager = GameObject.FindObjectOfType<KeyManager>();
     }
 
-    private void OnTriggerEnter() {
+    private void OnTriggerEnter(Collider player) {
+        if(player.tag == "Player") {
 
+        }
     }
 
 }
