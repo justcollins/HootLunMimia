@@ -11,6 +11,7 @@ public class Weapon : MonoBehaviour
 	public int totalAmmo = 40;
 	public int ammoPerMag = 10;
     public float bulletVelocity = 10;
+    public int dmgPerShot = 10;
 	public Transform spawn;
 	public Transform shellEjectionPoint;
 	public GameObject shell;
@@ -48,6 +49,22 @@ public class Weapon : MonoBehaviour
                 if (Physics.Raycast(ray, out hit, shotDistance))
                 {
                     shotDistance = hit.distance;
+
+                    if (hit.collider.tag == "Player")
+                    {
+                        hit.collider.GetComponent<PlayerHealth>().subCurrentHealth(dmgPerShot);
+                    }
+                    if (hit.collider.tag == "Enemy")
+                    {
+                        hit.collider.GetComponent<EnemyHealth>().subCurrentHealth(dmgPerShot);
+                    }
+                }
+
+
+
+                if (Physics.Raycast(ray, out hit, shotDistance))
+                {
+                    shotDistance = hit.distance;
                 } 
                 if (tracer)
                 {
@@ -55,7 +72,6 @@ public class Weapon : MonoBehaviour
                 }
 
                 Rigidbody newShell = Instantiate(shell, shellEjectionPoint.position, Quaternion.identity) as Rigidbody;
-                //Rigidbody shellRigid = newShell.GetComponent<Rigidbody>();
                 Vector3 accVector = new Vector3(Random.Range(-accVariance, accVariance), 0, Random.Range(-accVariance, accVariance));
                 newShell.AddForce((shellEjectionPoint.forward * bulletVelocity) + accVector);
             }
