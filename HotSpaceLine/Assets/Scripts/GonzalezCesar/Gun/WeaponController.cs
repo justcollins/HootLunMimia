@@ -11,6 +11,7 @@ public class WeaponController : MonoBehaviour
 	public Weapon[] guns;
 	private Weapon currentGun;
 	private CharacterController controller;
+
     public bool[] weaponHave;
 
 	void Start () 
