@@ -16,6 +16,7 @@ public class WeaponController : MonoBehaviour
 	void Start () 
 	{
 		controller = GetComponent<CharacterController>();
+        currentGun = guns[0];
 		EquipGun(0);
 	}
 
@@ -62,13 +63,10 @@ public class WeaponController : MonoBehaviour
 
 	void EquipGun(int i) 
 	{
-		if (currentGun) 
-		{
-			Destroy(currentGun.gameObject);
-		}
-
-		currentGun = Instantiate(guns[i],hand.position,hand.rotation) as Weapon;
-		currentGun.transform.parent = hand;
+        Debug.Log("WEAPON: " + i);
+		currentGun.gameObject.SetActive(false);
+		currentGun = guns[i];
+        currentGun.gameObject.SetActive(true);
 	}
     public void setWeps(bool newWep, string wepName)
     {
@@ -77,5 +75,9 @@ public class WeaponController : MonoBehaviour
             if (wepName == guns[i].name)
                 weaponHave[i] = newWep;
         }
+    }
+    public Weapon GetCurrentGun()
+    {
+        return currentGun;
     }
 }
