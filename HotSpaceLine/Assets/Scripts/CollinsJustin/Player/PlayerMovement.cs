@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour {
     public int sprintSpeedMultiplier = 2;
 
     private new Rigidbody rigidbody;
+    private Animator animator;
     private Vector3 movement;
     private int groundMask;
     private float camRayLength;
@@ -24,11 +25,12 @@ public class PlayerMovement : MonoBehaviour {
 
 	void Awake () {
         rigidbody = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
         groundMask = LayerMask.GetMask("Ground");
 	}
 
     void Start() {
-        camRayLength = 1000000;//camera.transform.position.y + camera.transform.position.x + camera.transform.position.z + 1;
+        camRayLength = 1000000;
     }
 	
 	void FixedUpdate () {
