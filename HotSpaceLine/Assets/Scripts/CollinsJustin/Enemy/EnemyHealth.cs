@@ -3,6 +3,8 @@ using System.Collections;
 
 public class EnemyHealth : Health {
 
+    public GameObject weaponDrop;
+
 	void Start () {
         currentHealth = health;
     }
@@ -20,6 +22,7 @@ public class EnemyHealth : Health {
 
     private void IsDead() {
         if (!isAlive) {
+            GameObject droppedWeapon = (GameObject)Instantiate(weaponDrop, this.transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
     }

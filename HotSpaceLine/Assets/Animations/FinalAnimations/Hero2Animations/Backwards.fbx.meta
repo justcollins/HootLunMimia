@@ -1,0 +1,1146 @@
+fileFormatVersion: 2
+guid: d12c88bcd53f77045b34172640c2b8db
+timeCreated: 1457902478
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: retopo2:Head
+    100004: retopo2:HeadTop_End
+    100006: retopo2:Hips
+    100008: retopo2:LeftArm
+    100010: retopo2:LeftFoot
+    100012: retopo2:LeftForeArm
+    100014: retopo2:LeftHand
+    100016: retopo2:LeftHandIndex1
+    100018: retopo2:LeftHandIndex2
+    100020: retopo2:LeftHandIndex3
+    100022: retopo2:LeftHandIndex4
+    100024: retopo2:LeftHandMiddle1
+    100026: retopo2:LeftHandMiddle2
+    100028: retopo2:LeftHandMiddle3
+    100030: retopo2:LeftHandMiddle4
+    100032: retopo2:LeftHandPinky1
+    100034: retopo2:LeftHandPinky2
+    100036: retopo2:LeftHandPinky3
+    100038: retopo2:LeftHandPinky4
+    100040: retopo2:LeftHandRing1
+    100042: retopo2:LeftHandRing2
+    100044: retopo2:LeftHandRing3
+    100046: retopo2:LeftHandRing4
+    100048: retopo2:LeftHandThumb1
+    100050: retopo2:LeftHandThumb2
+    100052: retopo2:LeftHandThumb3
+    100054: retopo2:LeftHandThumb4
+    100056: retopo2:LeftLeg
+    100058: retopo2:LeftShoulder
+    100060: retopo2:LeftToe_End
+    100062: retopo2:LeftToeBase
+    100064: retopo2:LeftUpLeg
+    100066: retopo2:Neck
+    100068: retopo2:RetopoGroup1
+    100070: retopo2:RetopoGroup1_MeshPart0
+    100072: retopo2:RetopoGroup1_MeshPart1
+    100074: retopo2:RetopoGroup1_MeshPart2
+    100076: retopo2:RightArm
+    100078: retopo2:RightFoot
+    100080: retopo2:RightForeArm
+    100082: retopo2:RightHand
+    100084: retopo2:RightHandIndex1
+    100086: retopo2:RightHandIndex2
+    100088: retopo2:RightHandIndex3
+    100090: retopo2:RightHandIndex4
+    100092: retopo2:RightHandMiddle1
+    100094: retopo2:RightHandMiddle2
+    100096: retopo2:RightHandMiddle3
+    100098: retopo2:RightHandMiddle4
+    100100: retopo2:RightHandPinky1
+    100102: retopo2:RightHandPinky2
+    100104: retopo2:RightHandPinky3
+    100106: retopo2:RightHandPinky4
+    100108: retopo2:RightHandRing1
+    100110: retopo2:RightHandRing2
+    100112: retopo2:RightHandRing3
+    100114: retopo2:RightHandRing4
+    100116: retopo2:RightHandThumb1
+    100118: retopo2:RightHandThumb2
+    100120: retopo2:RightHandThumb3
+    100122: retopo2:RightHandThumb4
+    100124: retopo2:RightLeg
+    100126: retopo2:RightShoulder
+    100128: retopo2:RightToe_End
+    100130: retopo2:RightToeBase
+    100132: retopo2:RightUpLeg
+    100134: retopo2:Spine
+    100136: retopo2:Spine1
+    100138: retopo2:Spine2
+    400000: //RootNode
+    400002: retopo2:Head
+    400004: retopo2:HeadTop_End
+    400006: retopo2:Hips
+    400008: retopo2:LeftArm
+    400010: retopo2:LeftFoot
+    400012: retopo2:LeftForeArm
+    400014: retopo2:LeftHand
+    400016: retopo2:LeftHandIndex1
+    400018: retopo2:LeftHandIndex2
+    400020: retopo2:LeftHandIndex3
+    400022: retopo2:LeftHandIndex4
+    400024: retopo2:LeftHandMiddle1
+    400026: retopo2:LeftHandMiddle2
+    400028: retopo2:LeftHandMiddle3
+    400030: retopo2:LeftHandMiddle4
+    400032: retopo2:LeftHandPinky1
+    400034: retopo2:LeftHandPinky2
+    400036: retopo2:LeftHandPinky3
+    400038: retopo2:LeftHandPinky4
+    400040: retopo2:LeftHandRing1
+    400042: retopo2:LeftHandRing2
+    400044: retopo2:LeftHandRing3
+    400046: retopo2:LeftHandRing4
+    400048: retopo2:LeftHandThumb1
+    400050: retopo2:LeftHandThumb2
+    400052: retopo2:LeftHandThumb3
+    400054: retopo2:LeftHandThumb4
+    400056: retopo2:LeftLeg
+    400058: retopo2:LeftShoulder
+    400060: retopo2:LeftToe_End
+    400062: retopo2:LeftToeBase
+    400064: retopo2:LeftUpLeg
+    400066: retopo2:Neck
+    400068: retopo2:RetopoGroup1
+    400070: retopo2:RetopoGroup1_MeshPart0
+    400072: retopo2:RetopoGroup1_MeshPart1
+    400074: retopo2:RetopoGroup1_MeshPart2
+    400076: retopo2:RightArm
+    400078: retopo2:RightFoot
+    400080: retopo2:RightForeArm
+    400082: retopo2:RightHand
+    400084: retopo2:RightHandIndex1
+    400086: retopo2:RightHandIndex2
+    400088: retopo2:RightHandIndex3
+    400090: retopo2:RightHandIndex4
+    400092: retopo2:RightHandMiddle1
+    400094: retopo2:RightHandMiddle2
+    400096: retopo2:RightHandMiddle3
+    400098: retopo2:RightHandMiddle4
+    400100: retopo2:RightHandPinky1
+    400102: retopo2:RightHandPinky2
+    400104: retopo2:RightHandPinky3
+    400106: retopo2:RightHandPinky4
+    400108: retopo2:RightHandRing1
+    400110: retopo2:RightHandRing2
+    400112: retopo2:RightHandRing3
+    400114: retopo2:RightHandRing4
+    400116: retopo2:RightHandThumb1
+    400118: retopo2:RightHandThumb2
+    400120: retopo2:RightHandThumb3
+    400122: retopo2:RightHandThumb4
+    400124: retopo2:RightLeg
+    400126: retopo2:RightShoulder
+    400128: retopo2:RightToe_End
+    400130: retopo2:RightToeBase
+    400132: retopo2:RightUpLeg
+    400134: retopo2:Spine
+    400136: retopo2:Spine1
+    400138: retopo2:Spine2
+    4300000: retopo2:RetopoGroup1_MeshPart0
+    4300002: retopo2:RetopoGroup1_MeshPart1
+    4300004: retopo2:RetopoGroup1_MeshPart2
+    7400000: Backwards
+    9500000: //RootNode
+    13700000: retopo2:RetopoGroup1_MeshPart0
+    13700002: retopo2:RetopoGroup1_MeshPart1
+    13700004: retopo2:RetopoGroup1_MeshPart2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'mixamo.com' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'retopo2:Spine2' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Backwards
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: retopo2:Hips
+        weight: 1
+      - path: retopo2:Hips/retopo2:LeftUpLeg
+        weight: 1
+      - path: retopo2:Hips/retopo2:LeftUpLeg/retopo2:LeftLeg
+        weight: 1
+      - path: retopo2:Hips/retopo2:LeftUpLeg/retopo2:LeftLeg/retopo2:LeftFoot
+        weight: 1
+      - path: retopo2:Hips/retopo2:LeftUpLeg/retopo2:LeftLeg/retopo2:LeftFoot/retopo2:LeftToeBase
+        weight: 1
+      - path: retopo2:Hips/retopo2:LeftUpLeg/retopo2:LeftLeg/retopo2:LeftFoot/retopo2:LeftToeBase/retopo2:LeftToe_End
+        weight: 0
+      - path: retopo2:Hips/retopo2:RightUpLeg
+        weight: 1
+      - path: retopo2:Hips/retopo2:RightUpLeg/retopo2:RightLeg
+        weight: 1
+      - path: retopo2:Hips/retopo2:RightUpLeg/retopo2:RightLeg/retopo2:RightFoot
+        weight: 1
+      - path: retopo2:Hips/retopo2:RightUpLeg/retopo2:RightLeg/retopo2:RightFoot/retopo2:RightToeBase
+        weight: 1
+      - path: retopo2:Hips/retopo2:RightUpLeg/retopo2:RightLeg/retopo2:RightFoot/retopo2:RightToeBase/retopo2:RightToe_End
+        weight: 0
+      - path: retopo2:Hips/retopo2:Spine
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm/retopo2:LeftForeArm
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm/retopo2:LeftForeArm/retopo2:LeftHand
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm/retopo2:LeftForeArm/retopo2:LeftHand/retopo2:LeftHandIndex1
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm/retopo2:LeftForeArm/retopo2:LeftHand/retopo2:LeftHandIndex1/retopo2:LeftHandIndex2
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm/retopo2:LeftForeArm/retopo2:LeftHand/retopo2:LeftHandIndex1/retopo2:LeftHandIndex2/retopo2:LeftHandIndex3
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm/retopo2:LeftForeArm/retopo2:LeftHand/retopo2:LeftHandIndex1/retopo2:LeftHandIndex2/retopo2:LeftHandIndex3/retopo2:LeftHandIndex4
+        weight: 0
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm/retopo2:LeftForeArm/retopo2:LeftHand/retopo2:LeftHandMiddle1
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm/retopo2:LeftForeArm/retopo2:LeftHand/retopo2:LeftHandMiddle1/retopo2:LeftHandMiddle2
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm/retopo2:LeftForeArm/retopo2:LeftHand/retopo2:LeftHandMiddle1/retopo2:LeftHandMiddle2/retopo2:LeftHandMiddle3
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm/retopo2:LeftForeArm/retopo2:LeftHand/retopo2:LeftHandMiddle1/retopo2:LeftHandMiddle2/retopo2:LeftHandMiddle3/retopo2:LeftHandMiddle4
+        weight: 0
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm/retopo2:LeftForeArm/retopo2:LeftHand/retopo2:LeftHandPinky1
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm/retopo2:LeftForeArm/retopo2:LeftHand/retopo2:LeftHandPinky1/retopo2:LeftHandPinky2
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm/retopo2:LeftForeArm/retopo2:LeftHand/retopo2:LeftHandPinky1/retopo2:LeftHandPinky2/retopo2:LeftHandPinky3
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm/retopo2:LeftForeArm/retopo2:LeftHand/retopo2:LeftHandPinky1/retopo2:LeftHandPinky2/retopo2:LeftHandPinky3/retopo2:LeftHandPinky4
+        weight: 0
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm/retopo2:LeftForeArm/retopo2:LeftHand/retopo2:LeftHandRing1
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm/retopo2:LeftForeArm/retopo2:LeftHand/retopo2:LeftHandRing1/retopo2:LeftHandRing2
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm/retopo2:LeftForeArm/retopo2:LeftHand/retopo2:LeftHandRing1/retopo2:LeftHandRing2/retopo2:LeftHandRing3
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm/retopo2:LeftForeArm/retopo2:LeftHand/retopo2:LeftHandRing1/retopo2:LeftHandRing2/retopo2:LeftHandRing3/retopo2:LeftHandRing4
+        weight: 0
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm/retopo2:LeftForeArm/retopo2:LeftHand/retopo2:LeftHandThumb1
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm/retopo2:LeftForeArm/retopo2:LeftHand/retopo2:LeftHandThumb1/retopo2:LeftHandThumb2
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm/retopo2:LeftForeArm/retopo2:LeftHand/retopo2:LeftHandThumb1/retopo2:LeftHandThumb2/retopo2:LeftHandThumb3
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:LeftShoulder/retopo2:LeftArm/retopo2:LeftForeArm/retopo2:LeftHand/retopo2:LeftHandThumb1/retopo2:LeftHandThumb2/retopo2:LeftHandThumb3/retopo2:LeftHandThumb4
+        weight: 0
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:Neck
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:Neck/retopo2:Head
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:Neck/retopo2:Head/retopo2:HeadTop_End
+        weight: 0
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm/retopo2:RightForeArm
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm/retopo2:RightForeArm/retopo2:RightHand
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm/retopo2:RightForeArm/retopo2:RightHand/retopo2:RightHandIndex1
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm/retopo2:RightForeArm/retopo2:RightHand/retopo2:RightHandIndex1/retopo2:RightHandIndex2
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm/retopo2:RightForeArm/retopo2:RightHand/retopo2:RightHandIndex1/retopo2:RightHandIndex2/retopo2:RightHandIndex3
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm/retopo2:RightForeArm/retopo2:RightHand/retopo2:RightHandIndex1/retopo2:RightHandIndex2/retopo2:RightHandIndex3/retopo2:RightHandIndex4
+        weight: 0
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm/retopo2:RightForeArm/retopo2:RightHand/retopo2:RightHandMiddle1
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm/retopo2:RightForeArm/retopo2:RightHand/retopo2:RightHandMiddle1/retopo2:RightHandMiddle2
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm/retopo2:RightForeArm/retopo2:RightHand/retopo2:RightHandMiddle1/retopo2:RightHandMiddle2/retopo2:RightHandMiddle3
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm/retopo2:RightForeArm/retopo2:RightHand/retopo2:RightHandMiddle1/retopo2:RightHandMiddle2/retopo2:RightHandMiddle3/retopo2:RightHandMiddle4
+        weight: 0
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm/retopo2:RightForeArm/retopo2:RightHand/retopo2:RightHandPinky1
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm/retopo2:RightForeArm/retopo2:RightHand/retopo2:RightHandPinky1/retopo2:RightHandPinky2
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm/retopo2:RightForeArm/retopo2:RightHand/retopo2:RightHandPinky1/retopo2:RightHandPinky2/retopo2:RightHandPinky3
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm/retopo2:RightForeArm/retopo2:RightHand/retopo2:RightHandPinky1/retopo2:RightHandPinky2/retopo2:RightHandPinky3/retopo2:RightHandPinky4
+        weight: 0
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm/retopo2:RightForeArm/retopo2:RightHand/retopo2:RightHandRing1
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm/retopo2:RightForeArm/retopo2:RightHand/retopo2:RightHandRing1/retopo2:RightHandRing2
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm/retopo2:RightForeArm/retopo2:RightHand/retopo2:RightHandRing1/retopo2:RightHandRing2/retopo2:RightHandRing3
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm/retopo2:RightForeArm/retopo2:RightHand/retopo2:RightHandRing1/retopo2:RightHandRing2/retopo2:RightHandRing3/retopo2:RightHandRing4
+        weight: 0
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm/retopo2:RightForeArm/retopo2:RightHand/retopo2:RightHandThumb1
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm/retopo2:RightForeArm/retopo2:RightHand/retopo2:RightHandThumb1/retopo2:RightHandThumb2
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm/retopo2:RightForeArm/retopo2:RightHand/retopo2:RightHandThumb1/retopo2:RightHandThumb2/retopo2:RightHandThumb3
+        weight: 1
+      - path: retopo2:Hips/retopo2:Spine/retopo2:Spine1/retopo2:Spine2/retopo2:RightShoulder/retopo2:RightArm/retopo2:RightForeArm/retopo2:RightHand/retopo2:RightHandThumb1/retopo2:RightHandThumb2/retopo2:RightHandThumb3/retopo2:RightHandThumb4
+        weight: 0
+      - path: retopo2:RetopoGroup1
+        weight: 0
+      - path: retopo2:RetopoGroup1/retopo2:RetopoGroup1_MeshPart0
+        weight: 0
+      - path: retopo2:RetopoGroup1/retopo2:RetopoGroup1_MeshPart1
+        weight: 0
+      - path: retopo2:RetopoGroup1/retopo2:RetopoGroup1_MeshPart2
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: retopo2:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: retopo2:RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Backwards(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: retopo2:RetopoGroup1
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: .114303246, y: .114303246, z: .114303246}
+      transformModified: 1
+    - name: retopo2:RetopoGroup1_MeshPart0
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: retopo2:RetopoGroup1_MeshPart1
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: retopo2:RetopoGroup1_MeshPart2
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: retopo2:Hips
+      position: {x: -.00820612162, y: 1.12004101, z: -.0120114563}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: .999999881, y: .999999881, z: 1}
+      transformModified: 1
+    - name: retopo2:Spine
+      position: {x: -0, y: .0999473333, z: -.00817304756}
+      rotation: {x: -.0407846496, y: 0, z: 0, w: .999167979}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: retopo2:Spine1
+      position: {x: -0, y: .116994493, z: 2.85711454e-10}
+      rotation: {x: -7.07805086e-08, y: 0, z: 0, w: 1}
+      scale: {x: .99999994, y: 1, z: 1}
+      transformModified: 1
+    - name: retopo2:Spine2
+      position: {x: -0, y: .133707806, z: -3.1951064e-10}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.00000012, y: .99999994, z: 1}
+      transformModified: 1
+    - name: retopo2:LeftShoulder
+      position: {x: -.108389743, y: .136062309, z: -.00125386694}
+      rotation: {x: .529490888, y: -.467911303, z: .535691559, w: .46231252}
+      scale: {x: .99999994, y: .999999642, z: 1}
+      transformModified: 1
+    - name: retopo2:LeftArm
+      position: {x: 1.66392039e-11, y: .221081868, z: -2.84412938e-10}
+      rotation: {x: -.0312706381, y: -.000762879848, z: .0122609884, w: .999435484}
+      scale: {x: 1.00000036, y: 1, z: 1.00000024}
+      transformModified: 1
+    - name: retopo2:LeftForeArm
+      position: {x: 6.54865551e-10, y: .226811141, z: -1.69461134e-09}
+      rotation: {x: -.0681687891, y: .00570628047, z: -.039747104, w: .996865392}
+      scale: {x: .999999642, y: 1.00000048, z: 1}
+      transformModified: 1
+    - name: retopo2:LeftHand
+      position: {x: 2.81228152e-10, y: .248439878, z: 3.65491193e-10}
+      rotation: {x: -.0549819469, y: -.0229773521, z: .0536794066, w: .996778667}
+      scale: {x: 1.00000072, y: .99999994, z: 1.00000083}
+      transformModified: 1
+    - name: retopo2:LeftHandThumb1
+      position: {x: .0373004712, y: .0159977041, z: .00205166894}
+      rotation: {x: .0233175457, y: -.0115620643, z: -.444086641, w: .895605743}
+      scale: {x: 1.00000012, y: .999999642, z: .999999225}
+      transformModified: 1
+    - name: retopo2:LeftHandThumb2
+      position: {x: .00787528139, y: .0315423124, z: -1.62297731e-10}
+      rotation: {x: .0202207454, y: .00720459223, z: -.0968844667, w: .995064139}
+      scale: {x: .999999642, y: .999999523, z: .999999225}
+      transformModified: 1
+    - name: retopo2:LeftHandThumb3
+      position: {x: -.000296269252, y: .0283784028, z: -2.11379136e-10}
+      rotation: {x: -.00696984539, y: .00384279946, z: -.125197873, w: .992099881}
+      scale: {x: 1.00000036, y: 1.00000048, z: 1.00000048}
+      transformModified: 1
+    - name: retopo2:LeftHandThumb4
+      position: {x: -.00757900905, y: .022037752, z: 2.95903302e-11}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: retopo2:LeftHandRing1
+      position: {x: -.0206003562, y: .0725179613, z: -.00334784365}
+      rotation: {x: .0250626318, y: .0102266809, z: -.0635550544, w: .997611225}
+      scale: {x: .999999642, y: .999999583, z: .99999994}
+      transformModified: 1
+    - name: retopo2:LeftHandRing2
+      position: {x: -5.29567478e-05, y: .0438036844, z: -5.71498404e-12}
+      rotation: {x: -.0235966109, y: -2.98023188e-08, z: -1.04308114e-07, w: .999721646}
+      scale: {x: 1.00000024, y: 1.00000107, z: .999999285}
+      transformModified: 1
+    - name: retopo2:LeftHandRing3
+      position: {x: 3.41000159e-05, y: .0415463224, z: -5.15549825e-11}
+      rotation: {x: .00369289471, y: 2.98023188e-08, z: 8.94069601e-08, w: .999993205}
+      scale: {x: 1.00000012, y: .999999583, z: .999999881}
+      transformModified: 1
+    - name: retopo2:LeftHandRing4
+      position: {x: 1.88568847e-05, y: .0375776775, z: 8.18896062e-11}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: retopo2:LeftHandMiddle1
+      position: {x: .0193688273, y: .0777186304, z: -.00413199514}
+      rotation: {x: .0452247225, y: .00208075321, z: -.0859306827, w: .99527204}
+      scale: {x: 1.00000012, y: 1.00000083, z: .999999642}
+      transformModified: 1
+    - name: retopo2:LeftHandMiddle2
+      position: {x: -2.30987207e-05, y: .0445975624, z: 1.06803233e-10}
+      rotation: {x: -.0121231526, y: -2.98023224e-08, z: -5.96046448e-08, w: .999926507}
+      scale: {x: .999999344, y: .999999762, z: .999999404}
+      transformModified: 1
+    - name: retopo2:LeftHandMiddle3
+      position: {x: -1.06400676e-05, y: .0421540998, z: -1.36625822e-10}
+      rotation: {x: -.0410102122, y: -3.68058636e-06, z: .000123783931, w: .99915874}
+      scale: {x: 1.00000024, y: 1, z: 1.00000024}
+      transformModified: 1
+    - name: retopo2:LeftHandMiddle4
+      position: {x: 3.37385027e-05, y: .0375334471, z: -1.85428339e-10}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: retopo2:LeftHandPinky1
+      position: {x: -.0518721379, y: .0653386265, z: -.000733781373}
+      rotation: {x: .0114447912, y: -.00329701556, z: .0463050567, w: -.998856425}
+      scale: {x: .999999523, y: 1, z: .999999523}
+      transformModified: 1
+    - name: retopo2:LeftHandPinky2
+      position: {x: .00015288734, y: .0232379716, z: 2.4247071e-10}
+      rotation: {x: -.0392698236, y: 1.94311087e-05, z: .00373759773, w: -.999221742}
+      scale: {x: 1.00000095, y: 1.00000048, z: 1.00000024}
+      transformModified: 1
+    - name: retopo2:LeftHandPinky3
+      position: {x: -.000135768787, y: .0182437096, z: 6.55151489e-11}
+      rotation: {x: -.0373422466, y: 4.470348e-08, z: -1.49011594e-08, w: .999302626}
+      scale: {x: .999999106, y: .999999762, z: .999999285}
+      transformModified: 1
+    - name: retopo2:LeftHandPinky4
+      position: {x: -1.71178417e-05, y: .0156702995, z: -8.98392472e-12}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: retopo2:LeftHandIndex1
+      position: {x: .0531036705, y: .0707308501, z: -.00346840848}
+      rotation: {x: .0533774793, y: -.00703020394, z: -.123761192, w: .990850508}
+      scale: {x: .999999464, y: 1.00000024, z: .999999702}
+      transformModified: 1
+    - name: retopo2:LeftHandIndex2
+      position: {x: 1.83342381e-05, y: .0348227918, z: 9.05873154e-11}
+      rotation: {x: .0127985906, y: -8.94069601e-08, z: 8.94069601e-08, w: .999918163}
+      scale: {x: .999999523, y: .999999821, z: .999999583}
+      transformModified: 1
+    - name: retopo2:LeftHandIndex3
+      position: {x: 2.98336236e-05, y: .0328530632, z: 2.22146967e-10}
+      rotation: {x: -.040306516, y: 1.05798181e-05, z: -.000513761945, w: .999187231}
+      scale: {x: .99999994, y: .999999285, z: .999999642}
+      transformModified: 1
+    - name: retopo2:LeftHandIndex4
+      position: {x: -4.81673487e-05, y: .0279556364, z: 5.93587401e-11}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: retopo2:Neck
+      position: {x: -0, y: .150421366, z: 9.42578815e-09}
+      rotation: {x: .0407847203, y: 0, z: 0, w: .999167979}
+      scale: {x: 1.00000012, y: .99999994, z: 1}
+      transformModified: 1
+    - name: retopo2:Head
+      position: {x: 0, y: .0501548052, z: .00576945022}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: .999999821, y: 1, z: .99999994}
+      transformModified: 1
+    - name: retopo2:HeadTop_End
+      position: {x: -0, y: .296191454, z: .0340717398}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: retopo2:RightShoulder
+      position: {x: .108389743, y: .13604936, z: -.00109556015}
+      rotation: {x: -.529907942, y: -.467548281, z: .535333335, w: -.46261695}
+      scale: {x: .999999821, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: retopo2:RightArm
+      position: {x: 1.43795822e-10, y: .221081853, z: 1.72323067e-09}
+      rotation: {x: -.0322956145, y: .000825047493, z: -.00998178124, w: .999428213}
+      scale: {x: 1.00000024, y: 1.00000095, z: 1.00000036}
+      transformModified: 1
+    - name: retopo2:RightForeArm
+      position: {x: -4.61231026e-10, y: .226844072, z: -4.47245796e-10}
+      rotation: {x: .0675871521, y: .00562895695, z: -.0413775332, w: -.996839166}
+      scale: {x: 1.00000012, y: .99999851, z: .999999762}
+      transformModified: 1
+    - name: retopo2:RightHand
+      position: {x: -4.77362427e-10, y: .248427972, z: -1.82112103e-11}
+      rotation: {x: -.0385274142, y: .0261093881, z: -.047573518, w: .997782886}
+      scale: {x: 1.00000048, y: 1.00000024, z: .999999225}
+      transformModified: 1
+    - name: retopo2:RightHandRing1
+      position: {x: .0231386106, y: .0761460587, z: -.00303460378}
+      rotation: {x: -.0187522452, y: .0101095578, z: -.0724466071, w: -.997144759}
+      scale: {x: .999999702, y: 1.00000036, z: 1.00000048}
+      transformModified: 1
+    - name: retopo2:RightHandRing2
+      position: {x: 5.1218587e-05, y: .0428241268, z: 1.58524305e-10}
+      rotation: {x: .041426897, y: 7.45057775e-08, z: 5.53279933e-05, w: -.999141574}
+      scale: {x: .99999994, y: 1.0000006, z: 1.00000012}
+      transformModified: 1
+    - name: retopo2:RightHandRing3
+      position: {x: -4.05673563e-05, y: .0397616401, z: 6.31836805e-11}
+      rotation: {x: -.0145643298, y: 5.96046235e-08, z: -5.96046235e-08, w: -.999894023}
+      scale: {x: .999999583, y: .999999583, z: .999999821}
+      transformModified: 1
+    - name: retopo2:RightHandRing4
+      position: {x: -1.065175e-05, y: .0354353823, z: 2.3590685e-11}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: retopo2:RightHandMiddle1
+      position: {x: -.0181774274, y: .0735673085, z: -.00626200857}
+      rotation: {x: .030915238, y: -.00466348138, z: .0907041952, w: .995387018}
+      scale: {x: .999999106, y: 1.00000012, z: 1.00000036}
+      transformModified: 1
+    - name: retopo2:RightHandMiddle2
+      position: {x: 1.00128145e-05, y: .0460644178, z: -1.94803951e-10}
+      rotation: {x: -.0304859839, y: 0, z: 4.470348e-08, w: .999535203}
+      scale: {x: 1.00000012, y: 1.00000036, z: .999999225}
+      transformModified: 1
+    - name: retopo2:RightHandMiddle3
+      position: {x: -3.22242983e-07, y: .0439160801, z: 2.7214675e-11}
+      rotation: {x: -.0312984213, y: 1.49011576e-08, z: 0, w: .999510109}
+      scale: {x: 1.00000048, y: 1.00000024, z: 1.00000119}
+      transformModified: 1
+    - name: retopo2:RightHandMiddle4
+      position: {x: -9.69055691e-06, y: .0396848693, z: 1.12596599e-11}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: retopo2:RightHandThumb1
+      position: {x: -.0379304923, y: .0165601205, z: .00213389564}
+      rotation: {x: .0238338523, y: .0117046228, z: .440649867, w: .897286236}
+      scale: {x: .999999702, y: .999999881, z: 1.0000006}
+      transformModified: 1
+    - name: retopo2:RightHandThumb2
+      position: {x: -.00806828495, y: .0321576148, z: -1.70341963e-10}
+      rotation: {x: .0174261983, y: -.006135053, z: .109465875, w: .993818879}
+      scale: {x: 1, y: 1.00000024, z: .999999821}
+      transformModified: 1
+    - name: retopo2:RightHandThumb3
+      position: {x: .0010031166, y: .0275000129, z: -1.70882419e-10}
+      rotation: {x: -.0128370086, y: -.00628459314, z: .105461814, w: .994320631}
+      scale: {x: 1.00000048, y: 1.00000012, z: 1.00000048}
+      transformModified: 1
+    - name: retopo2:RightHandThumb4
+      position: {x: .00706516998, y: .0215771981, z: 8.48130455e-11}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: retopo2:RightHandIndex1
+      position: {x: -.0539212711, y: .0731952116, z: -.00266020559}
+      rotation: {x: .0372362956, y: .00274704327, z: .112779349, w: .992918313}
+      scale: {x: .999999046, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: retopo2:RightHandIndex2
+      position: {x: -1.81793457e-05, y: .03344208, z: -7.73181519e-11}
+      rotation: {x: .0155100785, y: -5.96046306e-08, z: -4.47034729e-08, w: .999879718}
+      scale: {x: .999999762, y: .999999762, z: 1.00000036}
+      transformModified: 1
+    - name: retopo2:RightHandIndex3
+      position: {x: -3.16960723e-05, y: .0322582386, z: 1.38257183e-10}
+      rotation: {x: -.0402085148, y: -1.1593098e-05, z: .000573038764, w: .999191165}
+      scale: {x: 1.00000083, y: 1.00000036, z: 1.00000012}
+      transformModified: 1
+    - name: retopo2:RightHandIndex4
+      position: {x: 4.98744339e-05, y: .0275453683, z: -4.22994972e-13}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: retopo2:RightHandPinky1
+      position: {x: .0489600897, y: .061208196, z: -.00153705047}
+      rotation: {x: .0197556261, y: .00882263295, z: -.0525779612, w: -.998382449}
+      scale: {x: 1.00000024, y: .999999642, z: .99999994}
+      transformModified: 1
+    - name: retopo2:RightHandPinky2
+      position: {x: -3.26309164e-05, y: .0235079024, z: -2.98152614e-11}
+      rotation: {x: .0388737246, y: -8.94069458e-08, z: -5.96046306e-08, w: .999244094}
+      scale: {x: .999999046, y: 1.00000036, z: .999999166}
+      transformModified: 1
+    - name: retopo2:RightHandPinky3
+      position: {x: .000102371807, y: .0200967714, z: -5.8242744e-11}
+      rotation: {x: -.0408839993, y: -6.78002743e-06, z: -.000924602035, w: .999163508}
+      scale: {x: 1.00000024, y: .999999762, z: 1.00000083}
+      transformModified: 1
+    - name: retopo2:RightHandPinky4
+      position: {x: -6.97381256e-05, y: .0182324965, z: 3.22417648e-11}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: retopo2:LeftUpLeg
+      position: {x: -.0852494761, y: -.0556147099, z: .0127326967}
+      rotation: {x: -1.39410222e-05, y: .00163618557, z: .999962389, w: .00852011982}
+      scale: {x: .999999583, y: .999999702, z: .99999994}
+      transformModified: 1
+    - name: retopo2:LeftLeg
+      position: {x: -5.22998089e-10, y: .470942587, z: -1.92603017e-11}
+      rotation: {x: -.0353260338, y: -.00073480123, z: .0207830761, w: .999159455}
+      scale: {x: 1.00000012, y: .99999994, z: 1.00000012}
+      transformModified: 1
+    - name: retopo2:LeftFoot
+      position: {x: 1.5822664e-10, y: .433697253, z: 3.15010268e-10}
+      rotation: {x: .493709803, y: .0321663357, z: -.0182782207, w: .868839324}
+      scale: {x: 1, y: 1.00000024, z: 1.00000036}
+      transformModified: 1
+    - name: retopo2:LeftToeBase
+      position: {x: -3.87297805e-10, y: .228111967, z: 3.72562026e-09}
+      rotation: {x: .275399983, y: .0138810668, z: -.00397706963, w: .961221337}
+      scale: {x: 1, y: .99999994, z: 1.00000048}
+      transformModified: 1
+    - name: retopo2:LeftToe_End
+      position: {x: 4.1174647e-11, y: .0864248946, z: 1.25700256e-10}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: retopo2:RightUpLeg
+      position: {x: .0852494761, y: -.0556147099, z: .0145916464}
+      rotation: {x: -4.85988221e-06, y: -.000570376753, z: .999963582, w: -.00852016918}
+      scale: {x: .999999762, y: .999999881, z: 1}
+      transformModified: 1
+    - name: retopo2:RightLeg
+      position: {x: -4.26740254e-10, y: .470940381, z: -1.34411562e-11}
+      rotation: {x: -.0342046842, y: .000711349887, z: -.020780189, w: .999198556}
+      scale: {x: 1.00000024, y: .999999523, z: .999999762}
+      transformModified: 1
+    - name: retopo2:RightFoot
+      position: {x: -4.60508465e-10, y: .433761746, z: 8.56030913e-10}
+      rotation: {x: .49453032, y: -.0320787318, z: .018268479, w: .868376076}
+      scale: {x: .999999344, y: 1.00000012, z: 1.00000036}
+      transformModified: 1
+    - name: retopo2:RightToeBase
+      position: {x: 9.13553955e-12, y: .228020862, z: -2.31084862e-09}
+      rotation: {x: .275687069, y: -.0133451875, z: .00382781914, w: .961147189}
+      scale: {x: 1.00000024, y: .999999106, z: 1.00000024}
+      transformModified: 1
+    - name: retopo2:RightToe_End
+      position: {x: 1.70370787e-10, y: .0870404169, z: 1.9695251e-10}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

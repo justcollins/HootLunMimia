@@ -2,21 +2,20 @@
 using System.Collections;
 
 public class Bullet : MonoBehaviour {
-	
-	
+
+    public int damage;
 	private float lifeTime = 5;
-	
 	private Material mat;
 	private Color originalCol;
 	private float fadePercent;
 	private float deathTime;
 	private bool fading;
+    private int mod = 1;
 	
 	void Start () {
 		mat = GetComponent<Renderer>().material;
 		originalCol = mat.color;
 		deathTime = Time.time + lifeTime;
-		
 		StartCoroutine("Fade");
 	}
 	
@@ -39,9 +38,21 @@ public class Bullet : MonoBehaviour {
 		}
 	}
 	
-	void OnTriggerEnter(Collider c) {
+	void OnTriggerStay(Collider c) {
+        if(PlayerDamage.doubleDamage == true) {
+            mod = 2;
+        } else {
+            mod = 1;
+        }
         if (!c.isTrigger)
         {
+            if(c.tag == "Enemy")
+            {
+                c.GetComponent<EnemyHealth>().subCurrentHealth(damage * mod);
+            } else if (c.tag == "Player")
+            {
+                c.GetComponent<PlayerHealth>().subCurrentHealth(damage);
+            }
             Destroy(gameObject);
         }
 		if (c.tag == "Ground") {

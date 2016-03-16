@@ -8,6 +8,10 @@ public class Health : MonoBehaviour {
     protected int currentHealth;
     protected bool isAlive = true;
 
+    public int getCurHelth() {
+        return currentHealth;
+    }
+
     public void addCurrentHealth(int addHealth) {
         currentHealth += addHealth;
     }

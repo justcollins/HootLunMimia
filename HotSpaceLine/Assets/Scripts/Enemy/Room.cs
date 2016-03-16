@@ -29,20 +29,20 @@ public class Room : MonoBehaviour {
                 playerAdjacent = false;
             }
         }
-	    if(playerPresent == true || playerAdjacent == true)
+        if (playerPresent == true || playerAdjacent == true)
         {
-            if(Player.GetComponent<WeaponController>().GetCurrentGun().CanShoot() )
+
+            if (Player.GetComponent<WeaponController>().GetCurrentGun().shotFired)
             {
-                if( Input.GetButtonDown("Shoot") )
+                for (int i = 0; i < Enemies.Count; i++)
                 {
-                    for(int i = 0; i < Enemies.Count; i++)
-                    {
-                        Enemies[i].SetAgent(Player.transform);
-                    }
+                    Debug.Log(i);
+                    Enemies[i].SetAgent(Player.transform);
                 }
             }
+            else
+                Debug.Log(this.name + "WE CANT SHOOT THE FUCK");
         }
-
 	}
 
     void OnTriggerEnter(Collider other)
