@@ -35,7 +35,7 @@ public class EnemyPathing : MonoBehaviour {
                         if (patrolLocs != null)
                         {
                             iterator = (iterator + 1) % iterMAX;
-                            //Debug.Log("ITERATOR: " + iterator);
+                            Debug.Log("ON THE MOVE PATROL");
                             //Debug.Log("MAX: " + iterMAX);
                             agent.SetDestination(patrolLocs[iterator].position);
                         }
@@ -69,5 +69,9 @@ public class EnemyPathing : MonoBehaviour {
             patrolLocs.Add(child);
             iterMAX++;
         }
+    }
+    public void SetAgent(Transform playerPos)
+    {
+        agent.SetDestination(playerPos.position);
     }
 }
