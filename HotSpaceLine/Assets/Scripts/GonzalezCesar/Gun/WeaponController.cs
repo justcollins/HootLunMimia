@@ -11,19 +11,23 @@ public class WeaponController : MonoBehaviour
 	public Weapon[] guns;
 	private Weapon currentGun;
 	private CharacterController controller;
+    private WeaponGUI wepGUI;
 
     public bool[] weaponHave;
 
 	void Start () 
 	{
 		controller = GetComponent<CharacterController>();
+        wepGUI = GameObject.FindObjectOfType<WeaponGUI>();
         currentGun = guns[0];
 		EquipGun(0);
 	}
 
 	void Update () 
 	{
-		if (currentGun) {
+        wepGUI.SetAmmoInfo(currentGun.totalAmmo, currentGun.currentAmmoInMag);
+
+        if (currentGun) {
 			if (Input.GetButtonDown("Shoot")) 
 			{
                 //Debug.Log("mouse click");
@@ -36,16 +40,16 @@ public class WeaponController : MonoBehaviour
 
 			if (Input.GetButtonDown("Reload") || currentGun.currentAmmoInMag == 0) 
 			{
-				if (currentGun.Reload()) 
-				{
-					reloading = true;
-				}
+                if(currentGun.Reload())
+                {
+                    currentGun.FinishReload();
+                    //reloading = false;
+                }
 			}
 
 			if (reloading) 
 			{ 
-					currentGun.FinishReload();
-					reloading = false;
+					
 			}
 		}
 
@@ -68,7 +72,7 @@ public class WeaponController : MonoBehaviour
 		currentGun.gameObject.SetActive(false);
 		currentGun = guns[i];
         currentGun.gameObject.SetActive(true);
-	}
+    }
     public void setWeps(bool newWep, string wepName)
     {
         for (int i = 0; i < guns.Length; i++)

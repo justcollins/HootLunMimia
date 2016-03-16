@@ -19,9 +19,11 @@ public class Weapon : MonoBehaviour
 	private float secondsBetweenShots;
 	private float nextPossibleShootTime;
 	public int currentAmmoInMag;
-	private bool reloading;
+    public int reloadTime;
+    public bool reloading = false;
     public int accVariance;
     public int shotsPerFire;
+    public bool shotFired = false;
 	
 	void Start() {
         secondsBetweenShots = 60/rpm;
@@ -39,14 +41,16 @@ public class Weapon : MonoBehaviour
             nextPossibleShootTime = Time.time + secondsBetweenShots;
             currentAmmoInMag--;
             GetComponent<AudioSource>().Play();
+            shotFired = true;
+            StartCoroutine(WaitAndFalse(2));
             for (int i = 0; i < shotsPerFire; i++)
             {
                 Ray ray = new Ray(spawn.position, spawn.forward);
                 RaycastHit hit;
 
-                float shotDistance = 20;
+                float shotDistance = 10000000;
 
-                if (Physics.Raycast(ray, out hit, shotDistance))
+                /*if (Physics.Raycast(ray, out hit, shotDistance))
                 {
                     shotDistance = hit.distance;
 
@@ -58,7 +62,7 @@ public class Weapon : MonoBehaviour
                     {
                         hit.collider.GetComponent<EnemyHealth>().subCurrentHealth(dmgPerShot);
                     }
-                }
+                }*/
 
 
 
@@ -71,9 +75,9 @@ public class Weapon : MonoBehaviour
                     StartCoroutine("RenderTracer", ray.direction * shotDistance);
                 }
 
-                Rigidbody newShell = Instantiate(shell, shellEjectionPoint.position, Quaternion.identity) as Rigidbody;
+                GameObject newShell = (GameObject) Instantiate(shell, shellEjectionPoint.position, Quaternion.identity);
                 Vector3 accVector = new Vector3(Random.Range(-accVariance, accVariance), 0, Random.Range(-accVariance, accVariance));
-                newShell.AddForce((shellEjectionPoint.forward * bulletVelocity) + accVector);
+                newShell.GetComponent<Rigidbody>().AddForce((shellEjectionPoint.forward * bulletVelocity) + accVector);
             }
 		}
 		
@@ -105,23 +109,16 @@ public class Weapon : MonoBehaviour
 	}
 	
 	public bool Reload() {
-		if (totalAmmo != 0 && currentAmmoInMag != ammoPerMag) {
-			reloading = true;
-			return true;
+		if (totalAmmo != 0 && currentAmmoInMag != ammoPerMag && reloading == false) {
+            Debug.Log("WE CAN RELOAD");
+                return true;
 		}
-		
 		return false;
 	}
 	
 	public void FinishReload() {
-		reloading = false;
-		currentAmmoInMag = ammoPerMag;
-		totalAmmo -= ammoPerMag;
-		
-		if (totalAmmo < 0) {
-			currentAmmoInMag += totalAmmo;
-			totalAmmo = 0;
-		}
+        reloading = true;
+        StartCoroutine(ReloadTime(reloadTime));
 	}
 	
 	IEnumerator RenderTracer(Vector3 hitPoint) {
@@ -132,5 +129,23 @@ public class Weapon : MonoBehaviour
 		yield return null;
 		tracer.enabled = false;
 	}
+    IEnumerator WaitAndFalse(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        shotFired = false;
+    }
+    IEnumerator ReloadTime(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        reloading = false;
+        currentAmmoInMag = ammoPerMag;
+        totalAmmo -= ammoPerMag;
+
+        if (totalAmmo < 0)
+        {
+            currentAmmoInMag += totalAmmo;
+            totalAmmo = 0;
+        }
+    }
 }
 
