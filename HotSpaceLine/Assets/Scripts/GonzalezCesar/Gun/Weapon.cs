@@ -85,7 +85,7 @@ public class Weapon : MonoBehaviour
 		}
 	}
 	
-	private bool CanShoot() {
+	public bool CanShoot() {
 		bool canShoot = true;
 
 		if (Time.time < nextPossibleShootTime) {

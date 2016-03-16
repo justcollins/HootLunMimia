@@ -40,6 +40,10 @@ public class Bullet : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter(Collider c) {
+        if (!c.isTrigger)
+        {
+            Destroy(gameObject);
+        }
 		if (c.tag == "Ground") {
 			GetComponent<Rigidbody>().Sleep();
 		}
